@@ -1,0 +1,13 @@
+﻿to handle Method_A 
+	Log "Handler_Method_A"
+end Method_A
+
+to handle Method_B
+	Log "Handler_Method_B"
+end Method_B
+
+
+Set str = A
+set fileName = Test
+Put {A:Method_A, B:Method_B} into strMethods
+(fileName).(strMethods.(str))
